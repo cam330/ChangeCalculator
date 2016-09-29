@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js"></script>
+
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<title>ChangeCalculator</title>
+</head>
+<body>
+	<div id="myBody">
+	<h1 id="myH1" class="col-sm-offset-4 col-sm-4">Change Calculator!</h1>
+		<div id="fieldsIds" class="form-group container">
+			<div class="col-sm-6">
+				<label id="fieldLabel">How much is due for the sale?</label>
+				<div class="input-group">
+					<div class="input-group-addon">$</div>
+						<input id="dueId" type="number" name="amountDue" class="form-control" placeholder="Cost">
+				</div>
+			</div>
+
+			<div class="col-sm-6">
+				<label id="fieldLabel">How much has the customer given you?</label>
+				<div class="input-group">
+					<div class="input-group-addon">$</div>
+						<input id="givenId" type="number" name="amountGiven" class="form-control" placeholder="Amount Given">
+				</div>
+			</div>
+
+		</div>
+
+		<div class="col-sm-offset-4 col-sm-4 text-center form-group">
+			<div>
+				<button id="mathButton" type="button" class="btn btn-primary btn-lg btn-block btn-success">Calculate</button>
+			</div>
+		</div>
+
+		<div id="changeFields">
+				<div class="col-sm-offset-3 col-sm-6 form-group">
+					
+						<div data-role="popup" id="myPopup">
+						<p class="text-center">Dollars</p>
+						<pre id="dollars" class="text-center">
+						</pre>		
+					
+				</div>
+
+				<div class="row">
+				<div class="col-sm-offset-2 col-sm-2">
+					<p class="text-center">Quarters</p>
+						<pre id="quarters" class="text-center">
+						</pre>
+
+				</div>
+				<div class="col-sm-2">
+					<p class="text-center">Dimes</p>
+						<pre id="dimes" class="text-center">
+						</pre>
+
+				</div>
+				<div class="col-sm-2">
+					<p class="text-center">Nickels</p>
+						<pre id="nickels" class="text-center">
+						</pre>
+
+				</div>
+				<div class="col-sm-2">
+					<p class="text-center">Pennies</p>
+						<pre id="pennies" class="text-center">
+						</pre>
+				</div>
+				</div>
+				</div>
+
+	</div>
+
+</body>
+</html>
